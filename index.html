@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Left Stickers -->
+        <img src="image/shopping.svg" class="sticker l1" alt="">
+        <img src="image/img3.svg" class="sticker l2" alt="">
+        <img src="image/running.svg" class="sticker l3" alt="">
+
+        <!-- Right Stickers -->
+        <img src="image/coffee.svg" class="sticker r1" alt="">
+        <img src="image/laptop.svg" class="sticker r2" alt="">
+        <img src="image/saladf.svg" class="sticker r3" alt="">
+
+        <!-- Bottom Stickers -->
+        <img src="image/music1.svg" class="sticker b1" alt="">
+        <img src="image/pen.svg" class="sticker b2" alt="">
+
+        <div class="todo-app">
+            <h2>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+                To Do List
+                <img src="image/todolist.svg" alt="Todo icon">
+            </h2>
+
+            <div class="row">
+                <input 
+                    type="text" 
+                    id="input-box" 
+                    placeholder="Add your task">
+                <button onclick="addTask()">Add</button>
+              
+            </div>
+              <p id="task-counter" class="task-counter">0 tasks remaining</p>
+            <ul id="list-container"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
